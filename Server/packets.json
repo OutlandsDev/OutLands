@@ -1,0 +1,33 @@
+{
+    "packets": [
+      {
+        "name": "ping",
+        "response": {
+          "type": "pong",
+          "message": "Pong!"
+        }
+      },
+      {
+        "name": "hello",
+        "response": {
+          "type": "greeting",
+          "message": "Hello, client!"
+        }
+      },
+      {
+        "name": "custom",
+        "response": {
+          "type": "custom_response",
+          "message": "This is a custom response."
+        }
+      },
+      {
+        "name": "invalid",
+        "response": {
+            "type": "Invalid Packet",
+            "message": "Invalid Packet"
+        }
+      }
+    ]
+  }
+  

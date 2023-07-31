@@ -1,0 +1,29 @@
+{
+    "commands": [
+      {
+        "name": "/stop",
+        "description": "Stops the server",
+        "script": [
+          "server.stop()",
+          "exit()"
+        ]
+      },
+      {
+        "name": "/python",
+        "description": "Debug function, executes python command in server directory",
+        "script": [
+          "try:\n    exec(\" \".join(args))\nexcept:\n    pass"
+        ]
+      },
+      {
+        "name": "/help",
+        "description": "Lists all avalible commands",
+        "script": [
+          "print(\"-\" * 15 + \"Commands\" + \"-\" * 15)",
+          "for cmd in data['commands']:\n print(f\"{cmd['name']:<20}{cmd['description']}\")",
+          "print()"
+        ]
+      }
+    ]
+  }
+  
